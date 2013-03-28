@@ -64,7 +64,7 @@ def antragstext(soup):
                         text = text[:linkanfang] + text[linkende+4:]
                 else:
                         link = False
-        print text
+        #print text
         antraganfang = text.find(u"Die Bezirksverordnetenversammlung Treptow-Köpenick von Berlin möge beschließen:")
         antragende = text.find(u"Begründung:")
         antragtext = text[antraganfang:antragende]
